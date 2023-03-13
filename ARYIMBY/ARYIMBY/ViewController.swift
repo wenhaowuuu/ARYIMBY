@@ -28,7 +28,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/MainScene.scn")!
+        let scene = SCNScene(named: "art.scnassets/ModelScene.scn")!
+//        let scene = SCNScene(named: "art.scnassets/MainScene.scn")!
         
         //set the anchor
 //        let anchor = AnchorEntity(plane: .horizontal)
@@ -40,7 +41,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let dummyNode = scene.rootNode.childNode(withName: "DummyNode", recursively: false)
         
         //set the object child nodes' initial position (x,y,z). x:left or right of camera; y:up or down of camera; z: close or far of camera.
-        dummyNode?.position = SCNVector3(0,-15,-15) //all the children will be moved down to (0,-5,-5)
+        dummyNode?.position = SCNVector3(0,-200,-600) //all the children will be moved down to (0,-5,-5)
         
         //refer to all the staff in the scene
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
@@ -82,11 +83,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
-        //add debug options
+        //adjust camera FOV
+        if let camera = sceneView.pointOfView?.camera {
+           camera.fieldOfView = 360
+        }
         
-
+        //add debug options
+    
         // Run the view's session
         sceneView.session.run(configuration)
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
