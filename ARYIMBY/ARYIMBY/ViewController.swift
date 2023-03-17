@@ -26,6 +26,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
+        // enable camera control
+        sceneView.allowsCameraControl = true
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/ModelScene.scn")!
@@ -37,8 +39,50 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
+        let wait3s:SCNAction = SCNAction.wait(duration: 3)
+        let runAfter:SCNAction = SCNAction.run { _ in
+            
+            self.addSceneContent()
+            
+        }
+        
+        let seq:SCNAction = SCNAction.sequence( [wait3s, runAfter ] )
+        sceneView.scene.rootNode.runAction(seq)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
+        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+        
+    }
+    
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        
+        //guard let sceneView = sender.view as? ARSCNView
+        let touchLocation = sender.location(in:sceneView)
+
+        let hitTestResult = sceneView.hitTest(touchLocation, options: [:])
+        if !hitTestResult.isEmpty { //if hit result is not empty
+
+            for hitResult in hitTestResult{
+
+                //print(hitTestResult.node.name)
+                if (hitResult.node == ball) {
+                    //apply the tap as an impulse force to the ball
+                    ball.physicsBody?.applyForce(SCNVector3(0,50,0), asImpulse: true)
+                    
+                }
+
+            }
+
+        }
+            
+    }
+    
+    
+    //create a function for the dynamics to delay a little bit
+    func addSceneContent(){
+        
         //bring the dummyNode here
-        let dummyNode = scene.rootNode.childNode(withName: "DummyNode", recursively: false)
+        let dummyNode = self.sceneView.scene.rootNode.childNode(withName: "DummyNode", recursively: false)
         
         //set the object child nodes' initial position (x,y,z). x:left or right of camera; y:up or down of camera; z: close or far of camera.
         dummyNode?.position = SCNVector3(0,-200,-600) //all the children will be moved down to (0,-5,-5)
@@ -73,9 +117,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let lightNode = SCNNode()
         lightNode.light = light
         lightNode.position = SCNVector3(x: 1.5, y: 1.5, z: 1.5)
-        scene.rootNode.addChildNode(lightNode)
-        
+        self.sceneView.scene.rootNode.addChildNode(lightNode)
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -83,7 +127,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
-        //adjust camera FOV
+        
+        //show the AR tracking points
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints, SCNDebugOptions.showPhysicsShapes]
+        
+        //specify horizontal plane detection
+        configuration.planeDetection = .horizontal
+        
+        //adjust camera FOV?? not sure if this worked?
         if let camera = sceneView.pointOfView?.camera {
            camera.fieldOfView = 360
         }
