@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180B915B29C6665900701D93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915A29C6665900701D93 /* LoginViewController.swift */; };
+		180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915C29C666C900701D93 /* ModeChoiceViewController.swift */; };
 		18D395F229BC348100B3A467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D395F129BC348100B3A467 /* AppDelegate.swift */; };
 		18D395F429BC348100B3A467 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D395F329BC348100B3A467 /* art.scnassets */; };
 		18D395F629BC348100B3A467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D395F529BC348100B3A467 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180B915A29C6665900701D93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		180B915C29C666C900701D93 /* ModeChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeChoiceViewController.swift; sourceTree = "<group>"; };
 		18D395EE29BC348100B3A467 /* ARYIMBY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARYIMBY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D395F129BC348100B3A467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D395F329BC348100B3A467 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				18D395F729BC348100B3A467 /* Main.storyboard */,
 				18D395FA29BC348400B3A467 /* Assets.xcassets */,
 				18D395FC29BC348400B3A467 /* LaunchScreen.storyboard */,
+				180B915A29C6665900701D93 /* LoginViewController.swift */,
+				180B915C29C666C900701D93 /* ModeChoiceViewController.swift */,
 			);
 			path = ARYIMBY;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */,
+				180B915B29C6665900701D93 /* LoginViewController.swift in Sources */,
 				18D395F629BC348100B3A467 /* ViewController.swift in Sources */,
 				18D395F229BC348100B3A467 /* AppDelegate.swift in Sources */,
 			);
