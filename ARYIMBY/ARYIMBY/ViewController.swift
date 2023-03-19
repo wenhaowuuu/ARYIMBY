@@ -88,7 +88,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         //previous original position:
         //dummyNode?.position = SCNVector3(0,-200,-600) //all the children will be moved down to (0,-5,-5)
-        dummyNode?.position = SCNVector3(0,-400,-1200)
+        dummyNode?.position = SCNVector3(0,-500,-700)
         
         //refer to all the staff in the scene
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
