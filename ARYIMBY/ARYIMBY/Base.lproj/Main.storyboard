@@ -488,6 +488,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="See Score"/>
+                                <connections>
+                                    <segue destination="0Is-bw-gIM" kind="presentation" id="Mk5-d0-uqd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lGn-fR-gff"/>
@@ -503,7 +506,7 @@
             <objects>
                 <viewController title="5_QuizSummary" id="0Is-bw-gIM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGR-hx-3rB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-Cw-lU4">
@@ -570,8 +573,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Mk5-d0-uqd"/>
         <segue reference="E5D-Re-Vlh"/>
-        <segue reference="G6V-bi-Jsk"/>
+        <segue reference="V0A-zu-dx8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="MassingModel9.jpeg" width="3024" height="4032"/>
