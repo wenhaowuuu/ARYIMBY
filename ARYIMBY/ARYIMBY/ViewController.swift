@@ -30,7 +30,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.allowsCameraControl = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ModelScene.scn")!
+        let scene = SCNScene(named: "art.scnassets/ModelScene_LM_Compare.scn")!
 //        let scene = SCNScene(named: "art.scnassets/MainScene.scn")!
         
         //set the anchor
@@ -67,7 +67,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 //print(hitTestResult.node.name)
                 if (hitResult.node == ball) {
                     //apply the tap as an impulse force to the ball
-                    ball.physicsBody?.applyForce(SCNVector3(0,50,0), asImpulse: true)
+                    ball.physicsBody?.applyForce(SCNVector3(0,150,500), asImpulse: true)
                     
                 }
 
@@ -85,7 +85,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let dummyNode = self.sceneView.scene.rootNode.childNode(withName: "DummyNode", recursively: false)
         
         //set the object child nodes' initial position (x,y,z). x:left or right of camera; y:up or down of camera; z: close or far of camera.
-        dummyNode?.position = SCNVector3(0,-200,-600) //all the children will be moved down to (0,-5,-5)
+        
+        //previous original position:
+        //dummyNode?.position = SCNVector3(0,-200,-600) //all the children will be moved down to (0,-5,-5)
+        dummyNode?.position = SCNVector3(0,-400,-1200)
         
         //refer to all the staff in the scene
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
