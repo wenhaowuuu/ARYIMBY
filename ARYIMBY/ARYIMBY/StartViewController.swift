@@ -7,7 +7,7 @@
 
 import UIKit
 
-class __LoginViewController: UIViewController {
+class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,15 @@ class __LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func openAboutSite(_ sender: UIButton) {
+        if let url = URL(string: "https://github.com/wenhaowuuu/ARYIMBY"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func exitApp(_ sender: UIButton) {
+        exit(0)
+    }
     /*
     // MARK: - Navigation
 
