@@ -13,6 +13,12 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet var visibilitySwitch: UISwitch!
+    var arObject: SCNNode!
+    
+    var LDHidden = false
+    
+    
     
     //declare scene node for the ball and box
     var ball = SCNNode()
@@ -30,11 +36,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.allowsCameraControl = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ModelScene_LM_Compare.scn")!
-//        let scene = SCNScene(named: "art.scnassets/MainScene.scn")!
+        
+        let scene = SCNScene(named: "art.scnassets/ModelScene_LMH_Compare.scn")! //updated VR educational scene
+        
+//        let scene = SCNScene(named: "art.scnassets/AR_Scene_LMH.scn")! //test the actual site scene
         
         //set the anchor
 //        let anchor = AnchorEntity(plane: .horizontal)
+        
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -49,10 +58,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let seq:SCNAction = SCNAction.sequence( [wait3s, runAfter ] )
         sceneView.scene.rootNode.runAction(seq)
         
+        //control the visbility via the switch
+        arObject = sceneView.scene.rootNode.childNode(withName: "DummyNode", recursively: true)!
+        
+        //Use recursive function to hide the benefits node under dummyNode
+        
+        //hide certain AR objects based on node names - this cannot be put before the addSceneContent() method!!
+        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+            if (node.name == "GHG_Node") {
+                node.isHidden = true
+            }
+        }
+        
+        //add tap recognizer for user tapping
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
         self.sceneView.addGestureRecognizer(tapGestureRecognizer)
         
     }
+    
+    @IBAction func visibilitySwitchChanged(_ sender: UISwitch){
+        if sender.isOn {
+            arObject.isHidden = false
+        } else {
+            arObject.isHidden = true
+        }
+    }
+    
     
     @objc func handleTap(sender: UITapGestureRecognizer) {
         
@@ -78,10 +109,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     
+    
+    
     //create a function for the dynamics to delay a little bit
     func addSceneContent(){
         
-        //bring the dummyNode here
+        //LOW DENSITY: DUMMY NODE - bring the dummyNode here
         let dummyNode = self.sceneView.scene.rootNode.childNode(withName: "DummyNode", recursively: false)
         
         //set the object child nodes' initial position (x,y,z). x:left or right of camera; y:up or down of camera; z: close or far of camera.
@@ -113,6 +146,39 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
         }
         
+//
+//        //HIGH DENSITY: ME_NODE
+//        let HD_Node = self.sceneView.scene.rootNode.childNode(withName: "HD_Node", recursively: false)
+//
+//        HD_Node?.position = SCNVector3(0,-500,-700)
+//
+//        //refer to all the staff in the scene
+//        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+//
+//            if (node.name == "HD_ball") {
+//                print("found the HD ball!")
+//                ball = node //pass the node found to the ball SCNNode object
+//
+//                //physics property
+//                ball.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node:ball,options:nil))
+//                ball.physicsBody?.isAffectedByGravity = true
+//                ball.physicsBody?.restitution = 1
+//
+//            } else if (node.name == "HD_box") {
+//                print("found the HD box!")
+//                box = node
+//                let boxGeometry = box.geometry
+//                let boxShape:SCNPhysicsShape = SCNPhysicsShape(geometry: boxGeometry!, options:nil)
+//                box.physicsBody = SCNPhysicsBody(type: .static, shape: boxShape)
+//                box.physicsBody?.restitution = 1
+//            }
+//
+//        }
+        
+        
+        
+        
+        
         //add a light
         let light = SCNLight()
         light.type = SCNLight.LightType.omni
@@ -122,6 +188,53 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         lightNode.position = SCNVector3(x: 1.5, y: 1.5, z: 1.5)
         self.sceneView.scene.rootNode.addChildNode(lightNode)
     }
+    
+    
+    
+    
+    // Only for actual site AR: add visibility button actions
+    @IBAction func showGHGNode() {
+        
+        //unhide certain AR objects based on node names
+        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+            if (node.name != "GHG_Node") {
+                node.isHidden = true
+            }
+            else if node.name == "GHG_Node" {
+                node.isHidden = false
+            }
+        }
+    }
+    
+//    @IBAction func showMDNode() {
+//
+//        //unhide certain AR objects based on node names
+//        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+//            if (node.name == "DummyNode")||(node.name == "HD_Node") {
+//                node.isHidden = true
+//            }
+//            else if node.name == "MD_Node" {
+//                node.isHidden = false
+//            }
+//        }
+//    }
+//
+//    @IBAction func showHDNode() {
+//
+////        print("hide LD button clicked!")
+//
+//        //unhide certain AR objects based on node names
+//        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+//            if (node.name == "DummyNode")||(node.name == "MD_Node") {
+//                node.isHidden = true
+//            }
+//            else if node.name == "HD_Node" {
+//                node.isHidden = false
+//            }
+//        }
+//    }
+    
+    
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -156,6 +269,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
+    
+    
+    
 
     // MARK: - ARSCNViewDelegate
     
