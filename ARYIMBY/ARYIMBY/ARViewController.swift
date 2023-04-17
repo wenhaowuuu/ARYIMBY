@@ -43,8 +43,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
-        // enable camera control
-        sceneView.allowsCameraControl = true
+//        // enable camera control
+//        sceneView.allowsCameraControl = true
         
         // Create a new scene
         
@@ -250,10 +250,16 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         //unhide certain AR objects based on node names
         sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
-            if (node.name == "MD_Node")||(node.name == "HD_Node") {
+            // use if else to check for existing visibility
+            if (node.name == "MD_Node") && (node.isHidden == false) {
                 node.isHidden = true
             }
-            else if node.name == "DummyNode" {
+            
+            if (node.name == "HD_Node") && (node.isHidden == false) {
+                node.isHidden = true
+            }
+            
+            else if (node.name == "DummyNode") && (node.isHidden == true) {
                 node.isHidden = false
             }
         }
@@ -263,18 +269,31 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         //unhide certain AR objects based on node names
         sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
-            if (node.name == "DummyNode")||(node.name == "HD_Node") {
+            // use if else to check for existing visibility of three nodes - still having issue!
+            if (node.name == "DummyNode") && (node.isHidden == false) {
                 node.isHidden = true
             }
-            else if node.name == "MD_Node" {
+            
+            if (node.name == "HD_Node") && (node.isHidden == false) {
+                node.isHidden = true
+            }
+            
+            else if (node.name == "MD_Node") && (node.isHidden == true) {
                 node.isHidden = false
             }
+            
+            
+//            //Old Code with issue
+//            if (node.name == "DummyNode")||(node.name == "HD_Node") {
+//                node.isHidden = true
+//            }
+//            else if node.name == "MD_Node" {
+//                node.isHidden = false
+//            }
         }
     }
     
     @IBAction func showHDNode() {
-        
-//        print("hide LD button clicked!")
         
         //unhide certain AR objects based on node names
         sceneView.scene.rootNode.enumerateChildNodes{(node, _) in

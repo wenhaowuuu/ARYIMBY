@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180B915B29C6665900701D93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915A29C6665900701D93 /* LoginViewController.swift */; };
+		1808BD2B29ED07E60058FD07 /* ARVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */; };
+		180B915B29C6665900701D93 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915A29C6665900701D93 /* StartViewController.swift */; };
 		180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915C29C666C900701D93 /* ModeChoiceViewController.swift */; };
+		187622AA29E215D60040B1EA /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187622A929E215D60040B1EA /* ARViewController.swift */; };
+		187622AC29E219C00040B1EA /* SiteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187622AB29E219C00040B1EA /* SiteConfirmViewController.swift */; };
+		18A63E1529E326B20015B232 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A63E1429E326B20015B232 /* MapViewController.swift */; };
+		18A63E1729E343BE0015B232 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A63E1629E343BE0015B232 /* IntroViewController.swift */; };
 		18D395F229BC348100B3A467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D395F129BC348100B3A467 /* AppDelegate.swift */; };
 		18D395F429BC348100B3A467 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D395F329BC348100B3A467 /* art.scnassets */; };
 		18D395F629BC348100B3A467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D395F529BC348100B3A467 /* ViewController.swift */; };
@@ -38,8 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180B915A29C6665900701D93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVideoViewController.swift; sourceTree = "<group>"; };
+		180B915A29C6665900701D93 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		180B915C29C666C900701D93 /* ModeChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeChoiceViewController.swift; sourceTree = "<group>"; };
+		187622A929E215D60040B1EA /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		187622AB29E219C00040B1EA /* SiteConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteConfirmViewController.swift; sourceTree = "<group>"; };
+		18A63E1429E326B20015B232 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		18A63E1629E343BE0015B232 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		18D395EE29BC348100B3A467 /* ARYIMBY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARYIMBY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D395F129BC348100B3A467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D395F329BC348100B3A467 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -108,8 +118,13 @@
 				18D395F729BC348100B3A467 /* Main.storyboard */,
 				18D395FA29BC348400B3A467 /* Assets.xcassets */,
 				18D395FC29BC348400B3A467 /* LaunchScreen.storyboard */,
-				180B915A29C6665900701D93 /* LoginViewController.swift */,
+				180B915A29C6665900701D93 /* StartViewController.swift */,
 				180B915C29C666C900701D93 /* ModeChoiceViewController.swift */,
+				187622A929E215D60040B1EA /* ARViewController.swift */,
+				187622AB29E219C00040B1EA /* SiteConfirmViewController.swift */,
+				18A63E1429E326B20015B232 /* MapViewController.swift */,
+				18A63E1629E343BE0015B232 /* IntroViewController.swift */,
+				1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */,
 			);
 			path = ARYIMBY;
 			sourceTree = "<group>";
@@ -219,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 18D395E529BC348100B3A467;
+			packageReferences = (
+				18A63E1829E344F30015B232 /* XCRemoteSwiftPackageReference "Swift-YouTube-Player" */,
+			);
 			productRefGroup = 18D395EF29BC348100B3A467 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187622AC29E219C00040B1EA /* SiteConfirmViewController.swift in Sources */,
 				180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */,
-				180B915B29C6665900701D93 /* LoginViewController.swift in Sources */,
+				180B915B29C6665900701D93 /* StartViewController.swift in Sources */,
+				1808BD2B29ED07E60058FD07 /* ARVideoViewController.swift in Sources */,
 				18D395F629BC348100B3A467 /* ViewController.swift in Sources */,
 				18D395F229BC348100B3A467 /* AppDelegate.swift in Sources */,
+				187622AA29E215D60040B1EA /* ARViewController.swift in Sources */,
+				18A63E1529E326B20015B232 /* MapViewController.swift in Sources */,
+				18A63E1729E343BE0015B232 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +637,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18A63E1829E344F30015B232 /* XCRemoteSwiftPackageReference "Swift-YouTube-Player" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gilesvangruisen/Swift-YouTube-Player.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 18D395E629BC348100B3A467 /* Project object */;
 }

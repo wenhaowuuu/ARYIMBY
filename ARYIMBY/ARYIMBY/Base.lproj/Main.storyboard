@@ -107,12 +107,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4B-3V-F6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1323.0769230769231" y="-220.37914691943126"/>
+            <point key="canvasLocation" x="-2062" y="-145"/>
         </scene>
-        <!--Intro View Controller-->
+        <!--0.1_Intro View Controller-->
         <scene sceneID="lCb-Rd-0KS">
             <objects>
-                <viewController id="AxK-Y0-BLN" customClass="IntroViewController" customModule="ARYIMBY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AxK-Y0-BLN" userLabel="0.1_Intro View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="niD-Oz-JfH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,16 +124,16 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to ARYIMBY!" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qik-ke-0F7">
                                         <rect key="frame" x="0.0" y="8" width="342" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R91-f0-99x">
-                                        <rect key="frame" x="0.0" y="61" width="342" height="169"/>
+                                        <rect key="frame" x="0.0" y="61" width="342" height="333"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">This is an app developed to help you learn about benefits provided by higher density urban development. If you are interested and have time, please watch the following video clip to learn about the topic. If you have limited time, no worries, go ahead and click the "Continue" button below. Thank you!</mutableString>
+                                        <mutableString key="text">The ongoing global urbanization has led to escalating housing crisis across many cities in the world. The rising housing costs are becoming real burdens for new residents. The housing crisis calls for higher density urban development as a solution.  This is an app developed to help you learn more about benefits provided by higher density urban development. Please press "Continue" to explore further!</mutableString>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDu-rP-Hr2">
@@ -157,18 +157,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="kuE-V4-nWv" kind="presentation" id="bhX-gl-boe"/>
+                                            <segue destination="Rj4-gr-cZC" kind="presentation" id="uAg-pf-FwR"/>
                                         </connections>
                                     </button>
-                                    <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDl-sE-3S0">
-                                        <rect key="frame" x="0.0" y="251" width="342" height="198"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                             </view>
@@ -176,13 +167,160 @@
                         <viewLayoutGuide key="safeArea" id="hd4-i2-7dT"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="MDl-sE-3S0" id="M9h-ot-RUa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yy-6B-U3U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-929.23076923076917" y="491.94312796208527"/>
+            <point key="canvasLocation" x="-1026.1538461538462" y="-145.02369668246445"/>
+        </scene>
+        <!--0.2_Video Player Screen-->
+        <scene sceneID="4bd-I8-vmm">
+            <objects>
+                <viewController id="Rj4-gr-cZC" userLabel="0.2_Video Player Screen" customClass="IntroViewController" customModule="ARYIMBY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VJg-cf-BsH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="lKx-k1-ep7">
+                                <rect key="frame" x="-1" y="0.0" width="390" height="787"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-UN-Fuz">
+                                        <rect key="frame" x="24" y="76" width="342" height="693"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are the Benefits  associated with  Higher Density Development?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08W-Av-LOt">
+                                                <rect key="frame" x="-37" y="-12" width="416" height="92"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bRQ-id-6jJ">
+                                                <rect key="frame" x="0.0" y="88" width="342" height="178"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">If you are interested and have time, please watch the embedded introductory video. If you have limited time, no worries, go ahead and press the "Continue". Thank you!</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o2-bl-eb9">
+                                                <rect key="frame" x="128" y="638" width="87" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Previous">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleCallout"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="AxK-Y0-BLN" kind="presentation" id="KGF-aW-7zl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVL-iy-bKR">
+                                                <rect key="frame" x="68" y="568" width="207" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Continue">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="kuE-V4-nWv" kind="presentation" id="4xV-r8-Krn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="XvB-G5-nZw"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3n9-Fv-SaT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TR9-tW-Rm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-557" y="577"/>
+        </scene>
+        <!--0.2_Video AR Screen-->
+        <scene sceneID="9Zo-cC-pDO">
+            <objects>
+                <viewController id="VGc-s5-JlM" userLabel="0.2_Video AR Screen" customClass="ARVideoViewController" customModule="ARYIMBY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mhg-g1-oJn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZK-K8-6iQ" userLabel="Scene View">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: Point your camera towards a vertical surface to project the video clip and view it." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dyw-ka-d4f">
+                                <rect key="frame" x="24" y="83" width="342" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anj-Hv-FWy">
+                                <rect key="frame" x="86" y="546" width="101" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN7-di-5JV">
+                                <rect key="frame" x="204" y="546" width="101" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pause">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-ph-a86">
+                                <rect key="frame" x="27" y="710" width="92" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Previous" titleAlignment="center"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2Y-1J-Tf1">
+                                <rect key="frame" x="267" y="710" width="96" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jh2-9n-tsf">
+                                <rect key="frame" x="132" y="710" width="123" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back to Main" titleAlignment="center"/>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3w-dC-9Hc">
+                                <rect key="frame" x="189" y="560" width="13" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K86-bD-abF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="CZK-K8-6iQ" id="3J8-iD-WIO"/>
+                        <outlet property="webView" destination="F3w-dC-9Hc" id="kPi-K6-Dlz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ag-uA-7DC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1134" y="1376"/>
         </scene>
         <!--1_Background Screen-->
         <scene sceneID="1wJ-yO-nVO">
@@ -203,20 +341,20 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHB-JD-oR6">
                                                 <rect key="frame" x="0.0" y="8" width="342" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aJy-Xd-vc2">
-                                                <rect key="frame" x="0.0" y="61" width="342" height="299"/>
+                                                <rect key="frame" x="0.0" y="61" width="342" height="420"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">The ongoing global urbanization has led to escalating housing crisis across many cities in the world. Housing costs keep rising and are becoming real burdens for new residents. The housing crisis clearly calls for higher density urban development as a solution.  Despite all the controversy around the topic, this ARYIMBY app is developed to help you learn about the various benefits higher density urban development can bring about via two interactive AR experiences: firstly through an educative session, and then an applied session on a real development site.</mutableString>
+                                                <mutableString key="text"> Despite all the controversy around the topic, this ARYIMBY app is developed to help you learn about the various benefits higher density urban development can bring about via two interactive AR experiences: firstly through an educative session, and then an applied session on a real development site.</mutableString>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9c-L9-iBk">
-                                                <rect key="frame" x="64" y="560" width="215" height="43"/>
+                                                <rect key="frame" x="64" y="575" width="215" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                                 <state key="normal" title="Button"/>
@@ -236,15 +374,15 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleCallout"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="AxK-Y0-BLN" kind="presentation" id="2Cj-Pg-Mpo"/>
+                                                    <segue destination="Rj4-gr-cZC" kind="presentation" id="To9-Vw-Fmt"/>
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hint: Find a horizontal surface and point your camera towards it to view the benefits virtually." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gFm-32-2Lp">
-                                                <rect key="frame" x="14" y="482" width="320" height="74"/>
+                                                <rect key="frame" x="0.0" y="497" width="342" height="74"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -262,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwH-VF-VTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-249.23076923076923" y="-145.02369668246445"/>
+            <point key="canvasLocation" x="58" y="-145"/>
         </scene>
         <!--3_Site Choice Map Screen-->
         <scene sceneID="JIg-BW-H0D">
@@ -326,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75P-5c-g4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1636.9230769230769" y="-145.02369668246445"/>
+            <point key="canvasLocation" x="1797" y="-145"/>
         </scene>
         <!--3.1_ConfirmSiteScreen-->
         <scene sceneID="8im-LB-2iW">
@@ -370,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aop-3p-jkj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2772" y="-527"/>
+            <point key="canvasLocation" x="4625" y="-240"/>
         </scene>
         <!--3.3_RealSite AR Screen-->
         <scene sceneID="G1k-65-fGz">
@@ -390,7 +528,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Hint: Tap to anchor the building model;  Use two fingers to zoom or adjust the view. Tap the different teal buttons to view the proposed development of different densities.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOH-vw-MHb" userLabel="Show HD">
@@ -478,7 +616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7B-l7-uXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2816.9230769230767" y="620.61611374407585"/>
+            <point key="canvasLocation" x="1797" y="709"/>
         </scene>
         <!--2_AR Screen-->
         <scene sceneID="tXr-a1-R10">
@@ -535,12 +673,12 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-i7-9E8">
-                                <rect key="frame" x="35" y="561" width="320" height="108"/>
+                                <rect key="frame" x="35" y="561" width="332" height="123.66666666666663"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Hint: Tap to anchor the building model;  Use two fingers to zoom or adjust the view. Toggle the cyan buttons below to view different types of benefits one by one.</string>
+                                <string key="text">Hint: Point the camera towards a horizontal surface to anchor the building model;  Use two fingers to zoom or adjust the view. Tap on each model to view the benefits associated with each building scenario.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="F8u-tk-A2u">
@@ -550,6 +688,16 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Back to Main" titleAlignment="center"/>
                                 <connections>
                                     <segue destination="piA-FE-pm7" kind="presentation" id="1FP-tZ-i0c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cbh-Ps-3H9">
+                                <rect key="frame" x="150" y="111" width="87" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Benefits" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="showBenefitsNode" destination="BV1-FR-VrT" eventType="touchUpInside" id="o1f-mp-Ap0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -568,7 +716,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684.61538461538464" y="-145.02369668246445"/>
+            <point key="canvasLocation" x="908" y="-145"/>
         </scene>
         <!--3.2_SiteInfo Screen-->
         <scene sceneID="Sxi-cI-KpX">
@@ -589,19 +737,19 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Site Information" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-vT-tQp">
                                                 <rect key="frame" x="0.0" y="8" width="342" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This site is a parcel located in the City of Oakland, CA. Below are some detailed information about the site characteristics:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DlD-uA-jLE">
-                                                <rect key="frame" x="0.0" y="61" width="342" height="69"/>
+                                                <rect key="frame" x="0.0" y="61" width="342" height="118"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5s-IC-9tA">
-                                                <rect key="frame" x="68" y="512" width="207" height="43"/>
+                                                <rect key="frame" x="68" y="608" width="207" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                                 <state key="normal" title="Button"/>
@@ -612,13 +760,21 @@
                                                     <segue destination="X0B-2b-3Jz" kind="presentation" id="mGq-bb-rNA"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3w-kH-BwT">
-                                                <rect key="frame" x="24" y="144" width="300" height="215"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3w-kH-BwT">
+                                                <rect key="frame" x="0.0" y="207" width="342" height="255"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                                <string key="text">-  Address: 69 7th St, Oakland, CA 94607.  -  Geolocation: 37.795718, -122.265540. -  Size: 2.1 acres (91,500 sqft).  -  Frontage: 72 ft. -  Depth: 200ft.   -  Current Use: Maintenance Yard.</string>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">• Address: 69 7th St, Oakland, CA.  • Geolocation: 37.79, -122.26. • Size: 2.1 acres (91,500 sqft).  • Frontage: 72 ft. • Depth: 200ft.   • Current Use: Maintenance Yard.</string>
+                                                        <attributes>
+                                                            <color key="NSColor" systemColor="systemIndigoColor"/>
+                                                            <font key="NSFont" metaFont="system" size="22"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -635,7 +791,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3he-Gg-ljd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="622"/>
+            <point key="canvasLocation" x="908" y="709"/>
         </scene>
         <!--4.1.1_Q1_answer-->
         <scene sceneID="e4G-dZ-Fiu">
@@ -685,7 +841,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSS-hp-Xjj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3945" y="1450"/>
+            <point key="canvasLocation" x="3108" y="1175"/>
         </scene>
         <!--4.2.1_Q2_answer-->
         <scene sceneID="LNe-Sg-3YH">
@@ -734,7 +890,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6A-eN-JX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4840" y="1545"/>
+            <point key="canvasLocation" x="4134" y="1248"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0IF-rd-oQo">
@@ -783,7 +939,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZb-9b-egc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5780" y="1574"/>
+            <point key="canvasLocation" x="5120" y="1348"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NWe-ye-jNu">
@@ -832,7 +988,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rf6-TD-deI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6840" y="1574"/>
+            <point key="canvasLocation" x="6145" y="1466"/>
         </scene>
         <!--4.1_Quiz 1 Screen-->
         <scene sceneID="2p1-Va-pSz">
@@ -913,7 +1069,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyq-Pm-CM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3944.6153846153843" y="688.86255924170609"/>
+            <point key="canvasLocation" x="3108" y="492"/>
         </scene>
         <!--4.2_Quiz 2 Screen-->
         <scene sceneID="zrt-GO-TPb">
@@ -994,7 +1150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="az4-5U-gun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4807.6923076923076" y="840.99526066350711"/>
+            <point key="canvasLocation" x="4135" y="577"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TLP-AD-mhO">
@@ -1075,7 +1231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xci-Pm-rz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5750.7692307692305" y="857.34597156398104"/>
+            <point key="canvasLocation" x="5120" y="673"/>
         </scene>
         <!--4.3_Quiz 3 Screen-->
         <scene sceneID="Y3D-b5-j8U">
@@ -1156,7 +1312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndc-F3-lsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6666" y="857"/>
+            <point key="canvasLocation" x="6146" y="783"/>
         </scene>
         <!--5_QuizSummary-->
         <scene sceneID="EB8-vb-LFe">
@@ -1217,13 +1373,14 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="GVM-EN-3kN"/>
-        <segue reference="gPj-7D-l6h"/>
+        <segue reference="fXO-ht-1jS"/>
         <segue reference="yr7-oK-0UR"/>
         <segue reference="oTv-mY-pMg"/>
         <segue reference="ADc-L2-IEh"/>
-        <segue reference="mGq-bb-rNA"/>
-        <segue reference="bhX-gl-boe"/>
-        <segue reference="UaW-kb-Siy"/>
+        <segue reference="sWx-Mm-x87"/>
+        <segue reference="4xV-r8-Krn"/>
+        <segue reference="uAg-pf-FwR"/>
+        <segue reference="KGF-aW-7zl"/>
         <segue reference="qlU-b1-IBc"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -40,10 +40,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.addAnnotation(marker3)
         
         let marker4 = MKPointAnnotation()
-        marker3.coordinate = CLLocationCoordinate2D(latitude: 37.720211, longitude: -122.447410)
-        marker3.title = "Site 4: Balboa Park Station Triangle site"
-        marker3.subtitle = "2340 San Jose Avenue, San Francisco, CA 94112"
-        mapView.addAnnotation(marker3)
+        marker4.coordinate = CLLocationCoordinate2D(latitude: 37.720211, longitude: -122.447410)
+        marker4.title = "Site 4: Balboa Park Station Triangle site"
+        marker4.subtitle = "2340 San Jose Avenue, San Francisco, CA 94112"
+        mapView.addAnnotation(marker4)
         
         
         //Center map on markers
@@ -54,7 +54,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             let rect = MKMapRect(x:point.x, y:point.y, width:0.1, height: 0.1)
             zoomRect = zoomRect.union(rect)
         }
-        mapView.setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsets(top:50, left:50, bottom:50, right:50), animated: true)
+        mapView.setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsets(top:150, left:150, bottom:150, right:150), animated: true)
         
     }
     

@@ -14,15 +14,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var visibilitySwitch: UISwitch!
-    var arObject: SCNNode!
     
+    
+    var arObject: SCNNode!
     var LDHidden = false
+    
+    var showBenefits = false
     
     
     
     //declare scene node for the ball and box
     var ball = SCNNode()
     var box = SCNNode()
+    var LD_Model = SCNNode()
+    var LD_Benefits = SCNNode()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +43,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a new scene
         
         let scene = SCNScene(named: "art.scnassets/ModelScene_LMH_Compare.scn")! //updated VR educational scene
-        
 //        let scene = SCNScene(named: "art.scnassets/AR_Scene_LMH.scn")! //test the actual site scene
         
         //set the anchor
@@ -65,14 +69,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         //hide certain AR objects based on node names - this cannot be put before the addSceneContent() method!!
         sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
-            if (node.name == "GHG_Node") {
+            //Note that The enumerateChildNodes(_:) function in the SceneKit framework enumerates all of the child nodes of a specified node, including its children, their children, and so on, in a depth-first search.
+            
+            //hide the benefits at first
+            if (node.name == "Benefits") && (showBenefits == false) {
                 node.isHidden = true
             }
         }
         
-        //add tap recognizer for user tapping
+        
+        //add tap recognizer for user tapping to release the dropping benefits objects
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
         self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+        
+        //Not Sure about below code
+//        //add tap recognizer for user tapping on the models to show the benefits 3D texts
+//        let tapGestureBenefits = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+//        self.sceneView.addGestureRecognizer(tapGestureBenefits)
         
     }
     
@@ -85,26 +98,53 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     
+//    @objc func handleTap(sender: UITapGestureRecognizer) {
     @objc func handleTap(sender: UITapGestureRecognizer) {
         
-        //guard let sceneView = sender.view as? ARSCNView
+        print("tapping detected")
+        
+        //230416 version - but not working yet
+//        let sceneView = sender.view as! ARSCNView
+//        let touchLocation = sender.location(in: sceneView)
+//        let hitTestResults = sceneView.hitTest(touchLocation, options: [:])
+//
+//        guard let node = hitTestResults.first?.node else { return }
+//
+//        if node.name == "LD_Model"{
+//            print("LD model tapped!")
+//            if let hiddenNode = node.childNode(withName: "LD_Benefits", recursively: true) {
+//                hiddenNode.isHidden = false
+//            }
+//        }
+        
+        
+//        Old version: Define the ball dropping event below
+//        guard let sceneView = sender.view as? ARSCNView // has error
+                
         let touchLocation = sender.location(in:sceneView)
 
         let hitTestResult = sceneView.hitTest(touchLocation, options: [:])
-        if !hitTestResult.isEmpty { //if hit result is not empty
+        if !hitTestResult.isEmpty {
 
             for hitResult in hitTestResult{
 
                 //print(hitTestResult.node.name)
+//                if (hitResult.node == LD_Model) {
+//                    print("tapped LD model")
+//                    LD_Benefits.isHidden = false
+//                }
+                
                 if (hitResult.node == ball) {
                     //apply the tap as an impulse force to the ball
                     ball.physicsBody?.applyForce(SCNVector3(0,150,500), asImpulse: true)
-                    
+
                 }
 
             }
 
         }
+        
+        
             
     }
     
@@ -125,7 +165,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         //refer to all the staff in the scene
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
-        
+            
+//            //pass the LD MD HD models and benefits nodes to variables
+//            if (node.name == "LD_Model") {
+//                print("found the LD model")
+//                LD_Model = node
+//                LD_Model.physicsBody?.isAffectedByGravity = false
+//                LD_Model.physicsBody?.restitution = 1
+//            }
+//
+//            if (node.name == "LD_Benefits") {
+//                print("found the LD benefits")
+//                LD_Benefits = node
+//                LD_Benefits.physicsBody?.isAffectedByGravity = false
+//                LD_Benefits.physicsBody?.restitution = 1
+//
+//            }
+            
+            //ball and box nodes
             if (node.name == "ball") {
                 print("found the ball!")
                 ball = node //pass the node found to the ball SCNNode object
@@ -177,8 +234,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         
         
-        
-        
         //add a light
         let light = SCNLight()
         light.type = SCNLight.LightType.omni
@@ -206,33 +261,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-//    @IBAction func showMDNode() {
-//
-//        //unhide certain AR objects based on node names
-//        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
-//            if (node.name == "DummyNode")||(node.name == "HD_Node") {
-//                node.isHidden = true
-//            }
-//            else if node.name == "MD_Node" {
-//                node.isHidden = false
-//            }
-//        }
-//    }
-//
-//    @IBAction func showHDNode() {
-//
-////        print("hide LD button clicked!")
-//
-//        //unhide certain AR objects based on node names
-//        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
-//            if (node.name == "DummyNode")||(node.name == "MD_Node") {
-//                node.isHidden = true
-//            }
-//            else if node.name == "HD_Node" {
-//                node.isHidden = false
-//            }
-//        }
-//    }
+    
+    @IBAction func showBenefitsNode() {
+        
+        print("show benefits button touched")
+        
+        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+            if (node.name == "Benefits") {
+                print("found benefits node after button touched")
+                if (node.isHidden == true) {
+                    node.isHidden = false
+                } else {
+                    node.isHidden = true
+                }
+                
+            }
+        }
+    }
     
     
     
