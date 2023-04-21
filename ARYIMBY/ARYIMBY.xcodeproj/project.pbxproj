@@ -10,6 +10,7 @@
 		1808BD2B29ED07E60058FD07 /* ARVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */; };
 		180B915B29C6665900701D93 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915A29C6665900701D93 /* StartViewController.swift */; };
 		180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915C29C666C900701D93 /* ModeChoiceViewController.swift */; };
+		1861FE4E29F0EBAB00627105 /* ARNoBenefitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861FE4D29F0EBAB00627105 /* ARNoBenefitsViewController.swift */; };
 		187622AA29E215D60040B1EA /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187622A929E215D60040B1EA /* ARViewController.swift */; };
 		187622AC29E219C00040B1EA /* SiteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187622AB29E219C00040B1EA /* SiteConfirmViewController.swift */; };
 		18A63E1529E326B20015B232 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A63E1429E326B20015B232 /* MapViewController.swift */; };
@@ -46,6 +47,7 @@
 		1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVideoViewController.swift; sourceTree = "<group>"; };
 		180B915A29C6665900701D93 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		180B915C29C666C900701D93 /* ModeChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeChoiceViewController.swift; sourceTree = "<group>"; };
+		1861FE4D29F0EBAB00627105 /* ARNoBenefitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNoBenefitsViewController.swift; sourceTree = "<group>"; };
 		187622A929E215D60040B1EA /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		187622AB29E219C00040B1EA /* SiteConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteConfirmViewController.swift; sourceTree = "<group>"; };
 		18A63E1429E326B20015B232 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				18A63E1429E326B20015B232 /* MapViewController.swift */,
 				18A63E1629E343BE0015B232 /* IntroViewController.swift */,
 				1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */,
+				1861FE4D29F0EBAB00627105 /* ARNoBenefitsViewController.swift */,
 			);
 			path = ARYIMBY;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */,
 				180B915B29C6665900701D93 /* StartViewController.swift in Sources */,
 				1808BD2B29ED07E60058FD07 /* ARVideoViewController.swift in Sources */,
+				1861FE4E29F0EBAB00627105 /* ARNoBenefitsViewController.swift in Sources */,
 				18D395F629BC348100B3A467 /* ViewController.swift in Sources */,
 				18D395F229BC348100B3A467 /* AppDelegate.swift in Sources */,
 				187622AA29E215D60040B1EA /* ARViewController.swift in Sources */,

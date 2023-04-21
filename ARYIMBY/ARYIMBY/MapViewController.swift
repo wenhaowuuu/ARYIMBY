@@ -54,7 +54,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             let rect = MKMapRect(x:point.x, y:point.y, width:0.1, height: 0.1)
             zoomRect = zoomRect.union(rect)
         }
-        mapView.setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsets(top:150, left:150, bottom:150, right:150), animated: true)
+        mapView.setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsets(top:100, left:100, bottom:100, right:100), animated: true)
         
     }
     

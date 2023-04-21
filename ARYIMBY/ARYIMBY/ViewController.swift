@@ -37,8 +37,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
-        // enable camera control
-        sceneView.allowsCameraControl = true
+        
+        
+//        // enable camera control
+//        sceneView.allowsCameraControl = true
         
         // Create a new scene
         
@@ -136,7 +138,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 
                 if (hitResult.node == ball) {
                     //apply the tap as an impulse force to the ball
-                    ball.physicsBody?.applyForce(SCNVector3(0,150,500), asImpulse: true)
+//                    ball.physicsBody?.applyForce(SCNVector3(0,150,500), asImpulse: true)
 
                 }
 
@@ -189,7 +191,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 
                 //physics property
                 ball.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node:ball,options:nil))
-                ball.physicsBody?.isAffectedByGravity = true
+                ball.physicsBody?.isAffectedByGravity = false
                 ball.physicsBody?.restitution = 1
                 
             } else if (node.name == "box") {
@@ -248,18 +250,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     
     // Only for actual site AR: add visibility button actions
-    @IBAction func showGHGNode() {
-        
-        //unhide certain AR objects based on node names
-        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
-            if (node.name != "GHG_Node") {
-                node.isHidden = true
-            }
-            else if node.name == "GHG_Node" {
-                node.isHidden = false
-            }
-        }
-    }
+//    @IBAction func showGHGNode() {
+//
+//        //unhide certain AR objects based on node names
+//        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+//            if (node.name != "GHG_Node") {
+//                node.isHidden = true
+//            }
+//            else if node.name == "GHG_Node" {
+//                node.isHidden = false
+//            }
+//        }
+//    }
     
     
     @IBAction func showBenefitsNode() {
@@ -290,7 +292,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         
         //show the AR tracking points
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints, SCNDebugOptions.showPhysicsShapes]
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+//        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         
         //specify horizontal plane detection
         configuration.planeDetection = .horizontal
