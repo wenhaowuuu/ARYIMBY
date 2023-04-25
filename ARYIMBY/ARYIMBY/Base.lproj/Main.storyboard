@@ -68,7 +68,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6F-2x-X3z">
-                                                <rect key="frame" x="82" y="346" width="96" height="40.333333333333314"/>
+                                                <rect key="frame" x="82" y="364" width="96" height="40.333333333333314"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="About">
@@ -78,19 +78,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="openAboutSite:" destination="piA-FE-pm7" eventType="touchUpInside" id="yj7-wx-KTT"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bz9-8k-bTx">
-                                                <rect key="frame" x="82" y="403" width="96" height="40.333333333333314"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Exit">
-                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="exitApp:" destination="piA-FE-pm7" eventType="touchUpInside" id="8rr-oD-rnU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -181,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="lKx-k1-ep7">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                                <rect key="frame" x="-1" y="0.0" width="389" height="784"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-UN-Fuz">
@@ -631,7 +618,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="EhX-jG-eNA">
-                                <rect key="frame" x="-3" y="-1" width="391" height="786"/>
+                                <rect key="frame" x="-6" y="-2" width="392" height="784"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98k-jz-3r2">
@@ -720,7 +707,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="z9h-WF-mCb">
-                                <rect key="frame" x="-2" y="-3" width="391" height="788"/>
+                                <rect key="frame" x="-4" y="-3" width="392" height="786"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQg-CK-R0c">
@@ -778,7 +765,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="lhK-lv-XIM">
-                                <rect key="frame" x="-2" y="-3" width="391" height="788"/>
+                                <rect key="frame" x="-5" y="-3" width="392" height="786"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHY-zz-wDO">
@@ -836,7 +823,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="g1L-L5-cLt">
-                                <rect key="frame" x="-2" y="-2" width="391" height="788"/>
+                                <rect key="frame" x="-2" y="-2" width="389" height="786"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95b-0A-rOb">
@@ -902,7 +889,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="bdT-tn-QDd">
-                                <rect key="frame" x="-2" y="-1" width="389" height="786"/>
+                                <rect key="frame" x="-4" y="-2" width="387" height="784"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdL-2G-b9Y">
@@ -1174,7 +1161,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="gSB-3t-fcl">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                                <rect key="frame" x="-2" y="-1" width="390" height="786"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-LL-eep">
@@ -1303,7 +1290,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="3Bv-Ez-Cgd">
-                                <rect key="frame" x="-2" y="-2" width="391" height="786"/>
+                                <rect key="frame" x="-2" y="-3" width="389" height="784"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01L-D7-x6P">
@@ -1416,7 +1403,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Qmy-lW-HTd">
-                                <rect key="frame" x="-3" y="-2" width="391" height="786"/>
+                                <rect key="frame" x="-3" y="-3" width="389" height="784"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-if-2me">
@@ -2112,15 +2099,15 @@
         <segue reference="Sm7-Jg-mS1"/>
         <segue reference="9Yo-R4-eQJ"/>
         <segue reference="TcG-ma-b46"/>
-        <segue reference="4zt-pS-vim"/>
+        <segue reference="Cxt-9K-DiI"/>
         <segue reference="pix-TJ-L27"/>
         <segue reference="kfP-Dm-77I"/>
         <segue reference="Vwe-o7-BQ3"/>
         <segue reference="IzP-hQ-lo7"/>
         <segue reference="4xV-r8-Krn"/>
         <segue reference="uAg-pf-FwR"/>
-        <segue reference="KGF-aW-7zl"/>
-        <segue reference="fQc-I5-Fwv"/>
+        <segue reference="UaW-kb-Siy"/>
+        <segue reference="4Cf-rR-jgy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="scribble.variable" catalog="system" width="128" height="119"/>

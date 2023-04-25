@@ -16,8 +16,8 @@ class ARNoBenefitsViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var visibilitySwitch: UISwitch!
     
-    var arObject: SCNNode!
-    var showBenefits = false
+    var arObjectARNB: SCNNode!
+//    var showBenefits = false
     
     var lowSelected = false
     var medSelected = false
@@ -29,14 +29,14 @@ class ARNoBenefitsViewController: UIViewController, ARSCNViewDelegate {
     
     
     //declare scene node for the ball and box
-    var ball = SCNNode()
-    var box = SCNNode()
+    var ballarnb = SCNNode()
+//    var box = SCNNode()
+//
+//    var MD_ball = SCNNode()
+//    var MD_box = SCNNode()
     
-    var MD_ball = SCNNode()
-    var MD_box = SCNNode()
-    
-    var HD_ball = SCNNode()
-    var HD_box = SCNNode()
+//    var HD_ball = SCNNode()
+//    var HD_box = SCNNode()
     
     //Main function to render AR objects
     override func viewDidLoad() {
@@ -71,7 +71,7 @@ class ARNoBenefitsViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene.rootNode.runAction(seq)
         
         //control the visbility via the switch
-        arObject = sceneView.scene.rootNode
+        arObjectARNB = sceneView.scene.rootNode
         
 
         
@@ -96,9 +96,9 @@ class ARNoBenefitsViewController: UIViewController, ARSCNViewDelegate {
     
     @IBAction func visibilitySwitchChanged(_ sender: UISwitch){
         if sender.isOn {
-            arObject.isHidden = false
+            arObjectARNB.isHidden = false
         } else {
-            arObject.isHidden = true
+            arObjectARNB.isHidden = true
         }
     }
     
@@ -113,9 +113,8 @@ class ARNoBenefitsViewController: UIViewController, ARSCNViewDelegate {
         if !hitTestResult.isEmpty { //if hit result is not empty
 
             for hitResult in hitTestResult{
-
                 //print(hitTestResult.node.name)
-                if (hitResult.node == ball) {
+                if (hitResult.node == ballarnb) {
                     print("tap detected")
                     //apply the tap as an impulse force to the ball
 //                    ball.physicsBody?.applyForce(SCNVector3(0,150,500), asImpulse: true)

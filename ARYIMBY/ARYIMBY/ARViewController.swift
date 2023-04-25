@@ -15,8 +15,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var visibilitySwitch: UISwitch!
     
-    var arObject: SCNNode!
-    var showBenefits = false
+    var arObjectAR: SCNNode!
+//    var showBenefits = false
     
     var lowSelected = false
     var medSelected = false
@@ -28,14 +28,14 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     
     //declare scene node for the ball and box
-    var ball = SCNNode()
-    var box = SCNNode()
+    var ballar = SCNNode()
+//    var box = SCNNode()
     
-    var MD_ball = SCNNode()
-    var MD_box = SCNNode()
+//    var MD_ball = SCNNode()
+//    var MD_box = SCNNode()
     
-    var HD_ball = SCNNode()
-    var HD_box = SCNNode()
+//    var HD_ball = SCNNode()
+//    var HD_box = SCNNode()
     
     //Main function to render AR objects
     override func viewDidLoad() {
@@ -75,7 +75,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene.rootNode.runAction(seq)
         
         //control the visbility via the switch
-        arObject = sceneView.scene.rootNode
+        arObjectAR = sceneView.scene.rootNode
         
 
         
@@ -100,9 +100,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     @IBAction func visibilitySwitchChanged(_ sender: UISwitch){
         if sender.isOn {
-            arObject.isHidden = false
+            arObjectAR.isHidden = false
         } else {
-            arObject.isHidden = true
+            arObjectAR.isHidden = true
         }
     }
     
@@ -119,7 +119,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             for hitResult in hitTestResult{
 
                 //print(hitTestResult.node.name)
-                if (hitResult.node == ball) {
+                if (hitResult.node == ballar) {
                     print("tap detected")
                     //apply the tap as an impulse force to the ball
 //                    ball.physicsBody?.applyForce(SCNVector3(0,150,500), asImpulse: true)
@@ -158,12 +158,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         
         //LOW DENSITY: DUMMY NODE - bring the dummyNode here
-        let dummyNode = self.sceneView.scene.rootNode.childNode(withName: "DummyNode", recursively: false)
+        let dummyNodeAR = self.sceneView.scene.rootNode.childNode(withName: "DummyNode", recursively: false)
         
         //set the object child nodes' initial position (x,y,z). x:left or right of camera; y:up or down of camera; z: close or far of camera.
         
 //        dummyNode?.position = SCNVector3(-100,-100,-300) //original positions
-        dummyNode?.position = SCNVector3(-100,-50,-200)
+        dummyNodeAR?.position = SCNVector3(-100,-50,-200)
         
         
         //add animation
@@ -217,9 +217,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         //TBD: variabale name duplication need to be fixed!!! do the same thing below for MD_Node and HD_Node!
         //MEDIUM DENSITY: ME_NODE
-        let MD_Node = self.sceneView.scene.rootNode.childNode(withName: "MD_Node", recursively: false)
+        let MD_NodeAR = self.sceneView.scene.rootNode.childNode(withName: "MD_Node", recursively: false)
         
-        MD_Node?.position = SCNVector3(-100,-50,-200)
+        MD_NodeAR?.position = SCNVector3(-100,-50,-200)
         
         
         // Find the node with the given name in the scene
@@ -272,9 +272,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         
         //HIGH DENSITY: ME_NODE
-        let HD_Node = self.sceneView.scene.rootNode.childNode(withName: "HD_Node", recursively: false)
+        let HD_NodeAR = self.sceneView.scene.rootNode.childNode(withName: "HD_Node", recursively: false)
         
-        HD_Node?.position = SCNVector3(-100,-50,-200)
+        HD_NodeAR?.position = SCNVector3(-100,-50,-200)
         
         // Find the node with the given name in the scene
         if let spinNode3 = sceneView.scene.rootNode.childNode(withName: "HD_ball", recursively: true) {
@@ -432,68 +432,68 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-    @IBAction func showBenefitsNode() {
-
-        print("show benefits button touched")
-        
-        //04/17 - have to put the benefits nodes on the first child node level!
-        
-        if (lowSelected == true) {
-            print("show - low is selected")
-            //show/hide low benefits
-            
-//            230417: this approach also has issue...
-//            let node = self.sceneView.scene.rootNode.childNode(withName: "LD_Benefits", recursively: false)!
-//            if (node.isHidden == true) {
-//                node.isHidden = false
-//            } else {
-//                node.isHidden = true
-//            }
-            
-//            230417: this approach below still has issue!!!
-//            let parentNode = self.sceneView.scene.rootNode
-//            let nodeName = "LD_Benefits"
-//            hideshowNodeWithName(nodeName, parentNode: parentNode)
-
-        } else if (medSelected == true) {
-            print("show - medium is selected")
-            //show/hide med benefits
-//            let node = self.sceneView.scene.rootNode.childNode(withName: "MD_Benefits", recursively: false)!
-//            if (node.isHidden == true) {
-//                node.isHidden = false
-//            } else {
-//                node.isHidden = true
-//            }
-            
-//            let parentNode = self.sceneView.scene.rootNode
-//            let nodeName = "MD_Benefits"
-//            hideshowNodeWithName(nodeName, parentNode: parentNode)
-            
-        } else {
-            print("show - high is selected")
-            //show/hide high benefits
-//            let node = self.sceneView.scene.rootNode.childNode(withName: "HD_Benefits", recursively: false)!
-//            if (node.isHidden == true) {
-//                node.isHidden = false
-//            } else {
-//                node.isHidden = true
-//            }
-//            let parentNode = self.sceneView.scene.rootNode
-//            let nodeName = "HD_Benefits"
-//            hideshowNodeWithName(nodeName, parentNode: parentNode)
-            
-        }
-        
-//        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
-//            if (node.name == "Benefits") {
-//                print("found objects node after button touched")
-//                if (node.isHidden == true) {
-//                    node.isHidden = false
-//                } else {
-//                    node.isHidden = true
-//                }
+//    @IBAction func showBenefitsNode() {
 //
-//            }
+//        print("show benefits button touched")
+//
+//        //04/17 - have to put the benefits nodes on the first child node level!
+//
+//        if (lowSelected == true) {
+//            print("show - low is selected")
+//            //show/hide low benefits
+//
+////            230417: this approach also has issue...
+////            let node = self.sceneView.scene.rootNode.childNode(withName: "LD_Benefits", recursively: false)!
+////            if (node.isHidden == true) {
+////                node.isHidden = false
+////            } else {
+////                node.isHidden = true
+////            }
+//
+////            230417: this approach below still has issue!!!
+////            let parentNode = self.sceneView.scene.rootNode
+////            let nodeName = "LD_Benefits"
+////            hideshowNodeWithName(nodeName, parentNode: parentNode)
+//
+//        } else if (medSelected == true) {
+//            print("show - medium is selected")
+//            //show/hide med benefits
+////            let node = self.sceneView.scene.rootNode.childNode(withName: "MD_Benefits", recursively: false)!
+////            if (node.isHidden == true) {
+////                node.isHidden = false
+////            } else {
+////                node.isHidden = true
+////            }
+//
+////            let parentNode = self.sceneView.scene.rootNode
+////            let nodeName = "MD_Benefits"
+////            hideshowNodeWithName(nodeName, parentNode: parentNode)
+//
+//        } else {
+//            print("show - high is selected")
+//            //show/hide high benefits
+////            let node = self.sceneView.scene.rootNode.childNode(withName: "HD_Benefits", recursively: false)!
+////            if (node.isHidden == true) {
+////                node.isHidden = false
+////            } else {
+////                node.isHidden = true
+////            }
+////            let parentNode = self.sceneView.scene.rootNode
+////            let nodeName = "HD_Benefits"
+////            hideshowNodeWithName(nodeName, parentNode: parentNode)
+//
+//        }
+//
+////        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+////            if (node.name == "Benefits") {
+////                print("found objects node after button touched")
+////                if (node.isHidden == true) {
+////                    node.isHidden = false
+////                } else {
+////                    node.isHidden = true
+////                }
+////
+////            }
         
         
         //FOLLOWING NOT WORKING: SHOW INDIVIDUAL BENEFITS VIA BUTTON AS OF 04/17
@@ -528,8 +528,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 //                    node.isHidden = true
 //                }
 //            }
-        //}
-    }
+//        }
+//    }
     
     
     
