@@ -10,9 +10,12 @@
 		1808BD2B29ED07E60058FD07 /* ARVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */; };
 		180B915B29C6665900701D93 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915A29C6665900701D93 /* StartViewController.swift */; };
 		180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B915C29C666C900701D93 /* ModeChoiceViewController.swift */; };
+		181E15B129FE24C900EDB488 /* QuizTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E15B029FE24C900EDB488 /* QuizTopicsViewController.swift */; };
 		1861FE4E29F0EBAB00627105 /* ARNoBenefitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861FE4D29F0EBAB00627105 /* ARNoBenefitsViewController.swift */; };
+		186FC0B129F3C0BF002A2DE3 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FC0B029F3C0BF002A2DE3 /* Property List.plist */; };
 		187622AA29E215D60040B1EA /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187622A929E215D60040B1EA /* ARViewController.swift */; };
 		187622AC29E219C00040B1EA /* SiteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187622AB29E219C00040B1EA /* SiteConfirmViewController.swift */; };
+		189415C929FEC56F00129C3C /* SiteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189415C829FEC56F00129C3C /* SiteInfoViewController.swift */; };
 		18A63E1529E326B20015B232 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A63E1429E326B20015B232 /* MapViewController.swift */; };
 		18A63E1729E343BE0015B232 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A63E1629E343BE0015B232 /* IntroViewController.swift */; };
 		18D395F229BC348100B3A467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D395F129BC348100B3A467 /* AppDelegate.swift */; };
@@ -47,9 +50,12 @@
 		1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVideoViewController.swift; sourceTree = "<group>"; };
 		180B915A29C6665900701D93 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		180B915C29C666C900701D93 /* ModeChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeChoiceViewController.swift; sourceTree = "<group>"; };
+		181E15B029FE24C900EDB488 /* QuizTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTopicsViewController.swift; sourceTree = "<group>"; };
 		1861FE4D29F0EBAB00627105 /* ARNoBenefitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNoBenefitsViewController.swift; sourceTree = "<group>"; };
+		186FC0B029F3C0BF002A2DE3 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		187622A929E215D60040B1EA /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		187622AB29E219C00040B1EA /* SiteConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteConfirmViewController.swift; sourceTree = "<group>"; };
+		189415C829FEC56F00129C3C /* SiteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteInfoViewController.swift; sourceTree = "<group>"; };
 		18A63E1429E326B20015B232 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		18A63E1629E343BE0015B232 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		18D395EE29BC348100B3A467 /* ARYIMBY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARYIMBY.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +100,7 @@
 		18D395E529BC348100B3A467 = {
 			isa = PBXGroup;
 			children = (
+				186FC0B029F3C0BF002A2DE3 /* Property List.plist */,
 				18D395F029BC348100B3A467 /* ARYIMBY */,
 				18D3960629BC348500B3A467 /* ARYIMBYTests */,
 				18D3961029BC348500B3A467 /* ARYIMBYUITests */,
@@ -128,6 +135,8 @@
 				18A63E1629E343BE0015B232 /* IntroViewController.swift */,
 				1808BD2A29ED07E60058FD07 /* ARVideoViewController.swift */,
 				1861FE4D29F0EBAB00627105 /* ARNoBenefitsViewController.swift */,
+				181E15B029FE24C900EDB488 /* QuizTopicsViewController.swift */,
+				189415C829FEC56F00129C3C /* SiteInfoViewController.swift */,
 			);
 			path = ARYIMBY;
 			sourceTree = "<group>";
@@ -259,6 +268,7 @@
 				18D395F429BC348100B3A467 /* art.scnassets in Resources */,
 				18D395FE29BC348400B3A467 /* LaunchScreen.storyboard in Resources */,
 				18D395FB29BC348400B3A467 /* Assets.xcassets in Resources */,
+				186FC0B129F3C0BF002A2DE3 /* Property List.plist in Resources */,
 				18D395F929BC348100B3A467 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,8 +298,10 @@
 				180B915D29C666C900701D93 /* ModeChoiceViewController.swift in Sources */,
 				180B915B29C6665900701D93 /* StartViewController.swift in Sources */,
 				1808BD2B29ED07E60058FD07 /* ARVideoViewController.swift in Sources */,
+				181E15B129FE24C900EDB488 /* QuizTopicsViewController.swift in Sources */,
 				1861FE4E29F0EBAB00627105 /* ARNoBenefitsViewController.swift in Sources */,
 				18D395F629BC348100B3A467 /* ViewController.swift in Sources */,
+				189415C929FEC56F00129C3C /* SiteInfoViewController.swift in Sources */,
 				18D395F229BC348100B3A467 /* AppDelegate.swift in Sources */,
 				187622AA29E215D60040B1EA /* ARViewController.swift in Sources */,
 				18A63E1529E326B20015B232 /* MapViewController.swift in Sources */,
@@ -468,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WXHX435DGZ;
@@ -485,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = WeW.ARYIMBY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -499,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WXHX435DGZ;
@@ -516,7 +530,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = WeW.ARYIMBY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

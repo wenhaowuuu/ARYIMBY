@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4B-3V-F6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2062" y="-145"/>
+            <point key="canvasLocation" x="-2537" y="-145"/>
         </scene>
         <!--0.1_Intro View Controller-->
         <scene sceneID="lCb-Rd-0KS">
@@ -116,9 +116,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R91-f0-99x">
-                                        <rect key="frame" x="0.0" y="61" width="342" height="333"/>
+                                        <rect key="frame" x="0.0" y="61" width="342" height="355"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">The ongoing global urbanization has led to escalating housing crisis across many cities in the world. The rising housing costs are becoming real burdens for new residents. The housing crisis calls for higher density urban development as a solution.  This is an app developed to help you learn more about benefits provided by higher density urban development. Please press "Continue" to explore further!</string>
+                                        <mutableString key="text">The ongoing global urbanization has led to escalating housing crisis across many cities in the world. The rising housing costs are becoming real burdens for new residents. The housing crisis calls for higher density urban development as a solution.  This is an app developed to help you, as a dedicated community member, to learn more about benefits provided by higher density urban development. Please press "Continue" to explore!</mutableString>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yy-6B-U3U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1026.1538461538462" y="-145.02369668246445"/>
+            <point key="canvasLocation" x="-1666.1538461538462" y="-145.02369668246445"/>
         </scene>
         <!--0.2_Video Player Screen-->
         <scene sceneID="4bd-I8-vmm">
@@ -168,20 +168,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="lKx-k1-ep7">
-                                <rect key="frame" x="-1" y="0.0" width="389" height="784"/>
+                                <rect key="frame" x="-3" y="0.0" width="390" height="784"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-UN-Fuz">
                                         <rect key="frame" x="24" y="76" width="342" height="693"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are the Benefits  associated with  Higher Density Development?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08W-Av-LOt">
-                                                <rect key="frame" x="-37" y="-12" width="416" height="92"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bRQ-id-6jJ">
                                                 <rect key="frame" x="0.0" y="88" width="342" height="178"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -214,6 +207,13 @@
                                                     <segue destination="kuE-V4-nWv" kind="presentation" id="4xV-r8-Krn"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are some Common Myths  about Urban Density?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08W-Av-LOt">
+                                                <rect key="frame" x="-37" y="2" width="416" height="83"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                     </view>
@@ -228,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TR9-tW-Rm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-558.46153846153845" y="575.82938388625587"/>
+            <point key="canvasLocation" x="-812.30769230769226" y="-145.02369668246445"/>
         </scene>
         <!--0.2_Video AR Screen-->
         <scene sceneID="9Zo-cC-pDO">
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ag-uA-7DC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1134" y="1376"/>
+            <point key="canvasLocation" x="10337" y="1693"/>
         </scene>
         <!--1_Background Screen-->
         <scene sceneID="1wJ-yO-nVO">
@@ -335,7 +335,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aJy-Xd-vc2">
                                                 <rect key="frame" x="0.0" y="61" width="342" height="420"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text"> Despite all the controversy around the topic, this ARYIMBY app is developed to help you learn about the various benefits higher density urban development can bring about via two interactive AR experiences: firstly through an educative session, and then an applied session on a real development site.</string>
+                                                <string key="text"> Despite all the controversy around the topic, this ARYIMBY app is developed to help you, as a dedicated community member, to learn about the various benefits higher density urban development offers via two interactive AR experiences: firstly through an educative session, and then an applied session on a real development site.</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -398,13 +398,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZt-sf-V6x">
-                                <rect key="frame" x="-24" y="118" width="414" height="501"/>
+                                <rect key="frame" x="-12" y="93" width="414" height="501"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI4-9r-5PL">
-                                <rect key="frame" x="17" y="696" width="97" height="35"/>
+                                <rect key="frame" x="17" y="698" width="97" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Previous"/>
@@ -412,15 +412,15 @@
                                     <segue destination="kuE-V4-nWv" kind="presentation" id="OC2-e4-JyM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Development Site" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKG-gx-W9U">
-                                <rect key="frame" x="73" y="49" width="246" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Your Development Site!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKG-gx-W9U">
+                                <rect key="frame" x="8" y="32" width="374" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GlB-Gu-s2h">
-                                <rect key="frame" x="117" y="696" width="123" height="35"/>
+                                <rect key="frame" x="117" y="698" width="123" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back to Main" titleAlignment="center"/>
@@ -429,7 +429,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ0-cl-ncb">
-                                <rect key="frame" x="244" y="696" width="129" height="35"/>
+                                <rect key="frame" x="244" y="698" width="129" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go to this site">
@@ -441,6 +441,16 @@
                                     <segue destination="Iej-vi-iEH" kind="presentation" id="Ema-zv-nGr"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-r2-vlK">
+                                <rect key="frame" x="17" y="597" width="358" height="87.666666666666629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.48531907279999997" green="0.39508941440000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Hint: The map is interactive. Currently only the Lake Merritt BART Site has been set up, please click "Go to this site" to proceed.</string>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Cc-7B-HeR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -451,7 +461,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75P-5c-g4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797" y="-145"/>
+            <point key="canvasLocation" x="2001.5384615384614" y="-567.29857819905214"/>
         </scene>
         <!--3.1_ConfirmSiteScreen-->
         <scene sceneID="8im-LB-2iW">
@@ -495,7 +505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aop-3p-jkj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4625" y="-240"/>
+            <point key="canvasLocation" x="10152" y="161"/>
         </scene>
         <!--3.3_RealSite AR Screen-->
         <scene sceneID="G1k-65-fGz">
@@ -607,7 +617,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7B-l7-uXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3536.9230769230767" y="2154.7393364928907"/>
+            <point key="canvasLocation" x="-1206" y="882"/>
         </scene>
         <!--5.1_HousingQ1-->
         <scene sceneID="RWZ-Fk-pBb">
@@ -618,22 +628,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="EhX-jG-eNA">
-                                <rect key="frame" x="-6" y="-2" width="392" height="784"/>
+                                <rect key="frame" x="-8" y="-4" width="392" height="785"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98k-jz-3r2">
-                                        <rect key="frame" x="21" y="50" width="351" height="571"/>
+                                        <rect key="frame" x="21" y="22" width="351" height="659"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-WF-2aQ">
-                                                <rect key="frame" x="21" y="20" width="117" height="27"/>
+                                                <rect key="frame" x="21" y="46" width="117" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fTh-4N-Jkt">
-                                                <rect key="frame" x="21" y="46" width="322" height="214"/>
+                                                <rect key="frame" x="21" y="72" width="322" height="214"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">A single family house includes 1 housing unit. Based on the latest Census, an average US household has 3 persons (rounded to the nearest whole number). Given that only 1 house can be built on this site due to regulations, how many population can it accommodate?</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -641,7 +651,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB8-1M-QcN">
-                                                <rect key="frame" x="102" y="334" width="157" height="35"/>
+                                                <rect key="frame" x="102" y="360" width="157" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemTealColor"/>
                                                 <state key="normal" title="Button"/>
@@ -651,15 +661,22 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Fl-vD-NAd">
-                                                <rect key="frame" x="144" y="268" width="180" height="34"/>
+                                                <rect key="frame" x="144" y="294" width="180" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ame-DO-xWW">
-                                                <rect key="frame" x="26" y="272" width="112" height="22"/>
+                                                <rect key="frame" x="26" y="298" width="112" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic: Housing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jw7-H6-baq">
+                                                <rect key="frame" x="133" y="8" width="99" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -696,7 +713,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuN-7y-ieH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521.53846153846155" y="1566.824644549763"/>
+            <point key="canvasLocation" x="56.92307692307692" y="782.70142180094786"/>
         </scene>
         <!--5.1_HQ1A-->
         <scene sceneID="XPl-nI-RDT">
@@ -707,7 +724,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="z9h-WF-mCb">
-                                <rect key="frame" x="-4" y="-3" width="392" height="786"/>
+                                <rect key="frame" x="-5" y="-5" width="392" height="786"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQg-CK-R0c">
@@ -754,7 +771,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qK5-Qh-9Ct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493.84615384615381" y="2315.4028436018957"/>
+            <point key="canvasLocation" x="57" y="1489"/>
         </scene>
         <!--5.2_HQ2A-->
         <scene sceneID="QRL-B8-QQv">
@@ -765,7 +782,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="lhK-lv-XIM">
-                                <rect key="frame" x="-5" y="-3" width="392" height="786"/>
+                                <rect key="frame" x="-6" y="-5" width="392" height="787"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHY-zz-wDO">
@@ -812,7 +829,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqS-wk-b8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1354" y="2315"/>
+            <point key="canvasLocation" x="977" y="1506"/>
         </scene>
         <!--5.3_HQ3A-->
         <scene sceneID="fmV-IU-Z76">
@@ -823,7 +840,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="g1L-L5-cLt">
-                                <rect key="frame" x="-2" y="-2" width="389" height="786"/>
+                                <rect key="frame" x="-4" y="-4" width="390" height="786"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95b-0A-rOb">
@@ -878,7 +895,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7Y-qw-KS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2173.8461538461538" y="2314.6919431279621"/>
+            <point key="canvasLocation" x="1908" y="1506"/>
         </scene>
         <!--5.2_HousingQ2-->
         <scene sceneID="whI-7J-xq4">
@@ -889,42 +906,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="bdT-tn-QDd">
-                                <rect key="frame" x="-4" y="-2" width="387" height="784"/>
+                                <rect key="frame" x="-4" y="-4" width="385" height="785"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdL-2G-b9Y">
-                                        <rect key="frame" x="21" y="50" width="351" height="571"/>
+                                        <rect key="frame" x="21" y="20" width="351" height="653"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7om-IS-f7n">
-                                                <rect key="frame" x="21" y="20" width="119" height="27"/>
+                                                <rect key="frame" x="21" y="49" width="119" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Based on the previous answer, also given that this site has 91,500 sqft land, what is the land consumption per person?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3eJ-4d-eUg">
-                                                <rect key="frame" x="21" y="46" width="309" height="124"/>
+                                                <rect key="frame" x="21" y="75" width="309" height="124"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cJ-QR-hP1">
-                                                <rect key="frame" x="144" y="211" width="180" height="34"/>
+                                                <rect key="frame" x="144" y="240" width="180" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8J-wC-wjR">
-                                                <rect key="frame" x="26" y="217" width="112" height="22"/>
+                                                <rect key="frame" x="26" y="246" width="112" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmp-ID-gth">
-                                                <rect key="frame" x="102" y="274" width="157" height="35"/>
+                                                <rect key="frame" x="102" y="303" width="157" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemTealColor"/>
                                                 <state key="normal" title="Button"/>
@@ -933,6 +950,13 @@
                                                     <segue destination="gNB-33-kEQ" kind="presentation" id="Ax0-mm-H8l"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic: Housing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4z-4t-kSd">
+                                                <rect key="frame" x="126" y="8" width="99" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <viewLayoutGuide key="contentLayoutGuide" id="p4n-yR-LPe"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="AY2-uM-CIf"/>
@@ -975,7 +999,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyt-HR-vee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353.8461538461538" y="1566.824644549763"/>
+            <point key="canvasLocation" x="976.92307692307691" y="782.70142180094786"/>
         </scene>
         <!--2_AR Screen-->
         <scene sceneID="tXr-a1-R10">
@@ -1080,35 +1104,33 @@
         <!--3.2_SiteInfo Screen-->
         <scene sceneID="Sxi-cI-KpX">
             <objects>
-                <viewController id="Iej-vi-iEH" userLabel="3.2_SiteInfo Screen" sceneMemberID="viewController">
+                <viewController id="Iej-vi-iEH" userLabel="3.2_SiteInfo Screen" customClass="SiteInfoViewController" customModule="ARYIMBY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EvL-1V-Y2x">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16A-aM-ajK">
-                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                                <rect key="frame" x="0.0" y="8" width="390" height="836"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YyO-i9-Jfj">
                                         <rect key="frame" x="24" y="0.0" width="342" height="709"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Site Information" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-vT-tQp">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="site1_existing.png" translatesAutoresizingMaskIntoConstraints="NO" id="lm0-Ii-bvc">
+                                                <rect key="frame" x="0.0" y="375" width="334" height="163"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Site Information" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-vT-tQp">
                                                 <rect key="frame" x="0.0" y="8" width="342" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This site is a parcel located in the City of Oakland, CA. Below are some detailed information about the site characteristics:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DlD-uA-jLE">
-                                                <rect key="frame" x="0.0" y="61" width="342" height="118"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5s-IC-9tA">
-                                                <rect key="frame" x="68" y="608" width="207" height="43"/>
+                                                <rect key="frame" x="68" y="650" width="207" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                                 <state key="normal" title="Button"/>
@@ -1120,7 +1142,7 @@
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3w-kH-BwT">
-                                                <rect key="frame" x="0.0" y="207" width="342" height="255"/>
+                                                <rect key="frame" x="0.0" y="59" width="342" height="197"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1136,21 +1158,44 @@
                                                 </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="052-yt-1Zz">
+                                                <rect key="frame" x="0.0" y="260" width="342" height="113"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">The developer has prepared three proposals for the site: low, medium and high density. Go to the next AR screen to explore them!</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WiX-Eu-PZI">
+                                                <rect key="frame" x="0.0" y="550" width="342" height="92"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Hint: the following AR session is designed for physically present at the selected site or a similar outdoor environment (e.g. parking lot).</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                     </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="yh2-hx-orZ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="8r2-NQ-odb"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lm0-Ii-bvc" id="aOj-Bf-nre"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J4T-Rs-8oy"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
+                    <connections>
+                        <outlet property="SiteImage" destination="lm0-Ii-bvc" id="FrL-TJ-rkA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3he-Gg-ljd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="523" y="709"/>
+            <point key="canvasLocation" x="2903.0769230769229" y="-567.29857819905214"/>
         </scene>
         <!--3.2.1_RealSite_NoBenefits-->
         <scene sceneID="YT7-Sm-RgB">
@@ -1161,11 +1206,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="gSB-3t-fcl">
-                                <rect key="frame" x="-2" y="-1" width="390" height="786"/>
+                                <rect key="frame" x="-4" y="-3" width="390" height="787"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-LL-eep">
-                                        <rect key="frame" x="0.0" y="-44" width="390" height="844"/>
+                                        <rect key="frame" x="0.0" y="-44" width="396" height="844"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </arscnView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9J-Tb-b06">
@@ -1279,18 +1324,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4u-J4-FZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329.2307692307693" y="717.29857819905214"/>
+            <point key="canvasLocation" x="3793.8461538461538" y="-567.29857819905214"/>
         </scene>
         <!--4.0_Quiz Selection Screen-->
         <scene sceneID="qI7-8t-PTB">
             <objects>
-                <viewController id="QPd-pc-ZUr" userLabel="4.0_Quiz Selection Screen" sceneMemberID="viewController">
+                <viewController id="QPd-pc-ZUr" userLabel="4.0_Quiz Selection Screen" customClass="QuizTopicsViewController" customModule="ARYIMBY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WTx-69-CGI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="3Bv-Ez-Cgd">
-                                <rect key="frame" x="-2" y="-3" width="389" height="784"/>
+                                <rect key="frame" x="-3" y="-3" width="393" height="783"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01L-D7-x6P">
@@ -1301,22 +1346,41 @@
                                                 <rect key="frame" x="24" y="0.0" width="342" height="755"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Topic" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU0-OU-0R7">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Topic!" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU0-OU-0R7">
                                                         <rect key="frame" x="0.0" y="8" width="342" height="50"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Select one topic from the following list to test your knowledge about urban development benefits and then see them in AR!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bqx-N8-EaE">
-                                                        <rect key="frame" x="0.0" y="61" width="342" height="111.66666666666669"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bqx-N8-EaE">
+                                                        <rect key="frame" x="0.0" y="61" width="342" height="177"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">As a community member, please select one topic you are interested in from the following list to estimate the specific urban development benefits and prepare your meeting with other community stakeholders!</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="I2h-BK-Ysx">
+                                                        <rect key="frame" x="110" y="596" width="123" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Previous" titleAlignment="center"/>
+                                                        <connections>
+                                                            <segue destination="X0B-2b-3Jz" kind="presentation" id="vdJ-aB-iUz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="p02-ky-1NZ">
+                                                        <rect key="frame" x="110" y="649" width="123" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Back to Main" titleAlignment="center"/>
+                                                        <connections>
+                                                            <segue destination="piA-FE-pm7" kind="presentation" id="g4P-DX-Fxk"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHR-Rk-3vY" userLabel="Show HD">
-                                                        <rect key="frame" x="52" y="339" width="239" height="35"/>
+                                                        <rect key="frame" x="52" y="356" width="239" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -1326,7 +1390,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIL-Vj-NGZ" userLabel="Show HD">
-                                                        <rect key="frame" x="52" y="229" width="239" height="35"/>
+                                                        <rect key="frame" x="52" y="246" width="239" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" systemColor="systemTealColor"/>
                                                         <state key="normal" title="Button"/>
@@ -1337,7 +1401,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT3-uN-4TK" userLabel="Show HD">
-                                                        <rect key="frame" x="52" y="283" width="239" height="35"/>
+                                                        <rect key="frame" x="52" y="300" width="239" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" systemColor="systemTealColor"/>
                                                         <state key="normal" title="Button"/>
@@ -1347,31 +1411,16 @@
                                                             <segue destination="7e1-qg-Y0C" kind="presentation" id="TdX-aq-2N1"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="I2h-BK-Ysx">
-                                                        <rect key="frame" x="110" y="596" width="123" height="35"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Previous" titleAlignment="center"/>
-                                                        <connections>
-                                                            <segue destination="X0B-2b-3Jz" kind="presentation" id="vdJ-aB-iUz"/>
-                                                        </connections>
-                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxM-EV-LMQ">
-                                                        <rect key="frame" x="118" y="412" width="106" height="34"/>
+                                                        <rect key="frame" x="118" y="429" width="106" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Learn more">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleCallout"/>
                                                         </buttonConfiguration>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="p02-ky-1NZ">
-                                                        <rect key="frame" x="110" y="649" width="123" height="35"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Back to Main" titleAlignment="center"/>
                                                         <connections>
-                                                            <segue destination="piA-FE-pm7" kind="presentation" id="g4P-DX-Fxk"/>
+                                                            <action selector="learnMoreTopics:" destination="QPd-pc-ZUr" eventType="touchUpInside" id="Xjs-AK-3dd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1392,7 +1441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1R-3S-hNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2173.8461538461538" y="733.64928909952607"/>
+            <point key="canvasLocation" x="4684.6153846153848" y="-567.29857819905214"/>
         </scene>
         <!--5.3_HousingQ3 Screen-->
         <scene sceneID="aCC-rR-7U6">
@@ -1403,22 +1452,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Qmy-lW-HTd">
-                                <rect key="frame" x="-3" y="-3" width="389" height="784"/>
+                                <rect key="frame" x="-4" y="-4" width="388" height="783"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-if-2me">
-                                        <rect key="frame" x="21" y="50" width="351" height="571"/>
+                                        <rect key="frame" x="21" y="23" width="351" height="646"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iX-dw-mOd">
-                                                <rect key="frame" x="21" y="20" width="120" height="27"/>
+                                                <rect key="frame" x="21" y="42" width="120" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-n4-IXm">
-                                                <rect key="frame" x="21" y="46" width="309" height="135.66666666666666"/>
+                                                <rect key="frame" x="21" y="68" width="309" height="135.66666666666666"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">Based on what you learned earlier, please calculate the land consumption per person for the medium and high density scenarios for this site?</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1426,7 +1475,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87P-4m-0wW">
-                                                <rect key="frame" x="97" y="358" width="157" height="35"/>
+                                                <rect key="frame" x="97" y="380" width="157" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemTealColor"/>
                                                 <state key="normal" title="Button"/>
@@ -1436,28 +1485,35 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MzC-Wm-OhM">
-                                                <rect key="frame" x="112" y="204" width="180" height="34"/>
+                                                <rect key="frame" x="112" y="226" width="180" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilb-fc-Cui">
-                                                <rect key="frame" x="33" y="210" width="65" height="22"/>
+                                                <rect key="frame" x="33" y="232" width="65" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUT-l7-ccP">
-                                                <rect key="frame" x="112" y="281" width="180" height="34"/>
+                                                <rect key="frame" x="112" y="303" width="180" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNH-Qh-S4X">
-                                                <rect key="frame" x="60" y="286" width="38" height="22"/>
+                                                <rect key="frame" x="60" y="308" width="38" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic: Housing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFP-Iq-hEq">
+                                                <rect key="frame" x="126" y="8" width="99" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1494,7 +1550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Og0-7A-FMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2174" y="1567"/>
+            <point key="canvasLocation" x="1907.6923076923076" y="782.70142180094786"/>
         </scene>
         <!--4.1.1_Q1_answer-->
         <scene sceneID="e4G-dZ-Fiu">
@@ -1703,18 +1759,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYc-of-NvZ">
-                                <rect key="frame" x="21" y="50" width="351" height="571"/>
+                                <rect key="frame" x="21" y="20" width="351" height="657"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-WP-Aaa">
-                                        <rect key="frame" x="21" y="20" width="117" height="27"/>
+                                        <rect key="frame" x="21" y="44" width="117" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-As-vdH">
-                                        <rect key="frame" x="21" y="46" width="309" height="192"/>
+                                        <rect key="frame" x="21" y="70" width="309" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Given that a typical high density mixed-use building can include 10 housing units, and each household has 3 people on average, what is the number of people this site can accommodate in total?</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1722,20 +1778,20 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUu-rA-Qh1">
-                                        <rect key="frame" x="139" y="268" width="180" height="34"/>
+                                        <rect key="frame" x="139" y="292" width="180" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IO-69-fUH">
-                                        <rect key="frame" x="21" y="274" width="112" height="22"/>
+                                        <rect key="frame" x="21" y="298" width="112" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uy8-ty-MDG">
-                                        <rect key="frame" x="97" y="331" width="157" height="35"/>
+                                        <rect key="frame" x="97" y="355" width="157" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                         <state key="normal" title="Button"/>
@@ -1744,6 +1800,13 @@
                                             <segue destination="nYT-VV-roH" kind="presentation" id="599-Jd-QZ1"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic: GHG Reduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-Pv-cmu">
+                                        <rect key="frame" x="102" y="8" width="147" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="wdl-Gf-NYP"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="lf1-85-FJ2"/>
@@ -1784,11 +1847,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="006-kY-h3y">
-                                <rect key="frame" x="20" y="47" width="351" height="550"/>
+                                <rect key="frame" x="20" y="20" width="351" height="605"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WRb-L0-ngD">
-                                        <rect key="frame" x="21" y="55" width="309" height="193"/>
+                                        <rect key="frame" x="21" y="81" width="309" height="193"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Given that a low density development would emit 17.6 tons GHG per person annually, how much GHG in total this site would emit if building low density development to house the same number of people from Q1?</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1796,27 +1859,27 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT4-2V-MEA">
-                                        <rect key="frame" x="21" y="20" width="119" height="27"/>
+                                        <rect key="frame" x="21" y="46" width="119" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vz5-Ar-IV3">
-                                        <rect key="frame" x="144" y="248" width="180" height="34"/>
+                                        <rect key="frame" x="144" y="274" width="180" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSG-bP-eF1">
-                                        <rect key="frame" x="26" y="254" width="112" height="22"/>
+                                        <rect key="frame" x="26" y="280" width="112" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b1-7H-QYS">
-                                        <rect key="frame" x="97" y="308" width="157" height="35"/>
+                                        <rect key="frame" x="97" y="334" width="157" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                         <state key="normal" title="Button"/>
@@ -1825,6 +1888,13 @@
                                             <segue destination="2Ii-pU-BFh" kind="presentation" id="5gt-Di-d4x"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic: GHG Reduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPr-dY-cQY">
+                                        <rect key="frame" x="102" y="8" width="147" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="VpL-uM-8to"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Cj2-TH-VUU"/>
@@ -1874,11 +1944,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDb-fR-R1i">
-                                <rect key="frame" x="20" y="47" width="351" height="556"/>
+                                <rect key="frame" x="20" y="20" width="351" height="609"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ft7-zB-H9N">
-                                        <rect key="frame" x="21" y="55" width="309" height="159.33333333333334"/>
+                                        <rect key="frame" x="21" y="83" width="309" height="159.33333333333334"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Given that a high density development would emit 9.7 tons GHG per person annually, how much GHG in total woul be emitted instead for the same number of population?</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1886,27 +1956,27 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myk-c5-t9e">
-                                        <rect key="frame" x="21" y="20" width="120" height="27"/>
+                                        <rect key="frame" x="21" y="48" width="120" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPs-N0-IvS">
-                                        <rect key="frame" x="146" y="239" width="180" height="34"/>
+                                        <rect key="frame" x="146" y="267" width="180" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-tN-fVM">
-                                        <rect key="frame" x="28" y="245" width="112" height="22"/>
+                                        <rect key="frame" x="28" y="273" width="112" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-NC-yWD">
-                                        <rect key="frame" x="97" y="313" width="157" height="35"/>
+                                        <rect key="frame" x="97" y="341" width="157" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                         <state key="normal" title="Button"/>
@@ -1915,6 +1985,13 @@
                                             <segue destination="9S3-5Z-vwn" kind="presentation" id="Bww-pH-SJI"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic: GHG Reduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vir-LG-Cza">
+                                        <rect key="frame" x="102" y="8" width="147" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="rfs-Ll-Ylf"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="l8j-yK-QDI"/>
@@ -1964,11 +2041,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fsv-6x-UQx">
-                                <rect key="frame" x="20" y="57" width="351" height="487"/>
+                                <rect key="frame" x="20" y="20" width="351" height="606"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOs-Yr-daZ">
-                                        <rect key="frame" x="21" y="55" width="309" height="207"/>
+                                        <rect key="frame" x="21" y="79" width="309" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Given the difference of GHG emissions between low and high density development, and given that a mature tree can absorb 25 kg of GHG per year, how many trees could be saved if adapting a high density development? (1 ton = 1,000 kg)</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1976,27 +2053,27 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG9-U5-dFo">
-                                        <rect key="frame" x="21" y="20" width="120" height="27"/>
+                                        <rect key="frame" x="21" y="44" width="120" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Mf-XgB">
-                                        <rect key="frame" x="144" y="283" width="180" height="34"/>
+                                        <rect key="frame" x="143" y="307" width="180" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-tr-zW3">
-                                        <rect key="frame" x="26" y="289" width="112" height="22"/>
+                                        <rect key="frame" x="25" y="313" width="112" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQm-DR-kdO">
-                                        <rect key="frame" x="97" y="356" width="157" height="35"/>
+                                        <rect key="frame" x="96" y="380" width="157" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                         <state key="normal" title="Button"/>
@@ -2005,6 +2082,13 @@
                                             <segue destination="ER0-TJ-Og6" kind="presentation" id="80T-xP-dYx"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic: GHG Reduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JW-bM-Fum">
+                                        <rect key="frame" x="102" y="8" width="147" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="FpD-MW-qzH"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bY6-oj-pKB"/>
@@ -2034,7 +2118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndc-F3-lsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6146" y="783"/>
+            <point key="canvasLocation" x="6144.6153846153848" y="782.70142180094786"/>
         </scene>
         <!--5_QuizSummary-->
         <scene sceneID="EB8-vb-LFe">
@@ -2090,27 +2174,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAl-z3-Jvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5418" y="-239"/>
+            <point key="canvasLocation" x="10406" y="922"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="VqB-sG-PHC"/>
         <segue reference="ewr-m4-vV9"/>
-        <segue reference="Sm7-Jg-mS1"/>
+        <segue reference="bKs-ut-rBJ"/>
         <segue reference="9Yo-R4-eQJ"/>
         <segue reference="TcG-ma-b46"/>
-        <segue reference="Cxt-9K-DiI"/>
-        <segue reference="pix-TJ-L27"/>
-        <segue reference="kfP-Dm-77I"/>
-        <segue reference="Vwe-o7-BQ3"/>
-        <segue reference="IzP-hQ-lo7"/>
-        <segue reference="4xV-r8-Krn"/>
+        <segue reference="yrp-Nh-v62"/>
+        <segue reference="Ema-zv-nGr"/>
+        <segue reference="yWZ-3U-4Qw"/>
+        <segue reference="TdX-aq-2N1"/>
+        <segue reference="vdJ-aB-iUz"/>
+        <segue reference="OC2-e4-JyM"/>
         <segue reference="uAg-pf-FwR"/>
-        <segue reference="UaW-kb-Siy"/>
-        <segue reference="4Cf-rR-jgy"/>
+        <segue reference="KGF-aW-7zl"/>
+        <segue reference="Tvo-Li-u2v"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="scribble.variable" catalog="system" width="128" height="119"/>
+        <image name="site1_existing.png" width="1664" height="872"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
